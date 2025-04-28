@@ -72,6 +72,29 @@ body, html{
     text-decoration: none;
 }
 
+.navbar2{
+    background: linear-gradient(to right, #cecbcb 5%, #000000 50%);
+    height: 66px;
+    width: 100%;
+    display: flex;
+    font-size: 30px;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+}
+
+.navbar2 p{
+    color: white;
+    font-family: "Raleway";
+    margin-right: 20px;
+}
+.navbar2 a{
+    color: white;
+    font-family: "Raleway";
+    margin-right: 20px;
+    text-decoration: none;
+}
+
 .socials {
     position: absolute;
     bottom: 20px;
@@ -115,4 +138,31 @@ body, html{
     justify-content: left;
     font-family: "Raleway";
     padding-left: 20px;
+}
+
+.content-container { 
+    display: flex;
+    justify-content: center;
+    align-items: top; /* Adjust for the navbar height */
+    background-color: #cecbcb;
+}
+
+.about-container{
+    margin-top: 10px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cecbcb;
+    width: 250px;
+    height: 80px;
+    color: rgb(0, 0, 0); /* Ensure text is visible */
+    font-family: "Raleway";
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    font-size: 30px;
+    margin-top: 80px;
 }
