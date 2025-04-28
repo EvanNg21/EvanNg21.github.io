@@ -6,7 +6,6 @@
 body, html{
     margin: 0;
     padding: 0;
-    overflow:hidden;
 }
 
 .diagonal-split {
@@ -42,6 +41,14 @@ body, html{
     margin-left: -1px;
 }
 
+.right-content{
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    margin-top: 150px;
+    position: relative;
+}
+
 .navbar{
     background-color: black;
     height: 66px;
@@ -75,4 +82,37 @@ body, html{
     margin-right: 100px;
 }.socials img {
     margin: 10px;
+}
+.email-copy{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.tooltip {
+    visibility: hidden;
+    width: auto;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.email-copy:hover .tooltip {
+    visibility: visible;
+}
+
+.home-footer{
+    height: 50px;
+    display: flex;
+    color: #fff;
+    background-color: #212121;
+    align-items: center;
+    justify-content: left;
+    font-family: "Raleway";
+    padding-left: 20px;
 }

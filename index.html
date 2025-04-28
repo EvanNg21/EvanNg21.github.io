@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evan Ng</title>
-    <link rel="stylesheet" href="../css/styles.css"> 
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/scripts.js"></script> 
 </head>
 <body>
     <div class="diagonal-split">
@@ -13,12 +14,22 @@
             <p style="font-size: 50px;">Evan Ng</p>
             <p style="font-size: 20px; padding-top: 5px; color:rgb(95, 91, 91)">software developer</p>
             <div class="socials">
-                <img src="\assets\images\github.png" alt="github" style="width:50px;">
-                <img src="\assets\images\linkedin.png" alt="linkedin" style="width:50px;">
-                <img src="\assets\images\At-Symbol-icon.png" alt="linkedin" style="width:50px;">
+                <a href="https://github.com/EvanNg21" target="_blank">
+                    <img src="\assets\images\github.png" alt="github" style="width:50px;">
+                </a>
+                <a href="https://www.linkedin.com/in/evan-ng-697973278/" target="_blank">
+                    <img src="\assets\images\linkedin.png" alt="linkedin" style="width:50px;">
+                </a>
+                <div class="email-copy">
+                    <img src="\assets\images\At-Symbol-icon.png" alt="email" style="width:50px;" onclick="copyEmailToClipboard()">
+                    <span class="tooltip">
+                        evanwng21@gmail.com
+                        Click To Copy!
+                    </span>
+                </div>
             </div>
         </div>
-        <dib class="right-side">
+        <div class="right-side">
             <div class="navbar">
                 <a href="AboutMe.html">About Me</a>
                 <a href="Projects.html">Projects</a>
@@ -27,9 +38,14 @@
                     Contact
                 </a>
             </div>
-
-        </dib>
+            <div class="right-content">
+                hello
+                <img src="\assets\images\me.png" alt="me" style="width:400px; height: 400px; border-radius: 50%; object-fit: cover; object-position:10% 40%">
+            </div>
+        </div>
+    </div>
+    <div class="home-footer">
+        <p>Welcome To My Portfolio, Explore my projects, skills, and background!</p>
     </div>
 </body>
-
 </html>
