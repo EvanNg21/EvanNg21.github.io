@@ -3,6 +3,41 @@
     src: url("../assets/fonts/Raleway/Raleway-VariableFont_wght.ttf");
 }
 
+.fade-in-text {
+    opacity: 0;
+    animation: fade-in 2s ease-in forwards;
+}
+
+@keyframes fade-in{
+    to{
+        opacity: 1;
+    }
+}
+.fade-down {
+    transform: translateY(-50%);
+    opacity: 0;
+    animation: fade-up 1s ease-in forwards;
+}
+
+@keyframes fade-down{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fade-up {
+    transform: translateY(50%);
+    opacity: 0;
+    animation: fade-up 1s ease-in forwards;
+}
+
+@keyframes fade-up{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 body, html{
     margin: 0;
     padding: 0;
@@ -143,8 +178,8 @@ body, html{
 .content-container { 
     display: flex;
     justify-content: center;
-    align-items: top; /* Adjust for the navbar height */
-    background-color: #cecbcb;
+    align-items: top;
+    font-family: "Raleway";
 }
 
 .about-container{
@@ -158,11 +193,37 @@ body, html{
     background-color: #cecbcb;
     width: 250px;
     height: 80px;
-    color: rgb(0, 0, 0); /* Ensure text is visible */
+    color: rgb(0, 0, 0); 
     font-family: "Raleway";
     border-style: solid;
     border-width: 2px;
     border-color: black;
     font-size: 30px;
     margin-top: 80px;
+}
+
+.gradient{
+    background: radial-gradient(circle at center, #fdfdfd 5%, #cecbcb 50%);
+}
+.education {
+    font-family: "Raleway";
+    flex-direction: column;
+    text-align: center;
+}
+
+.education-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 25%;
+    margin: 20px;
+}
+
+.resume {
+    font-family: "Raleway";
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height:50px;
+    background-color: rgb(180, 180, 180);
 }
