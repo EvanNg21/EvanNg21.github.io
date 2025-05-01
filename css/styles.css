@@ -5,7 +5,7 @@
 
 .fade-in-text {
     opacity: 0;
-    animation: fade-in 2s ease-in forwards;
+    animation: fade-in 1.5s ease-in forwards;
 }
 
 @keyframes fade-in{
@@ -84,7 +84,7 @@ body, html{
     position: relative;
 }
 
-.navbar{
+.navbar1{
     background-color: black;
     height: 66px;
     width: 100%;
@@ -95,12 +95,12 @@ body, html{
     display: flex;
 }
 
-.navbar p{
+.navbar1 p{
     color: white;
     font-family: "Raleway";
     margin-right: 20px;
 }
-.navbar a{
+.navbar1 a{
     color: white;
     font-family: "Raleway";
     margin-right: 20px;
@@ -198,7 +198,7 @@ body, html{
     border-style: solid;
     border-width: 2px;
     border-color: black;
-    font-size: 30px;
+    font-size: 40px;
     margin-top: 80px;
 }
 
@@ -226,4 +226,33 @@ body, html{
     display: flex;
     height:50px;
     background-color: rgb(180, 180, 180);
+}
+
+.skills{
+    font-family: "Raleway";
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap:100px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 230px;
+}
+
+.skill-item p{
+   margin-top:auto;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+   margin: auto;
 }
