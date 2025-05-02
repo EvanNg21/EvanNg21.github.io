@@ -11,6 +11,11 @@
 @keyframes fade-in{
     to{
         opacity: 1;
+    }  
+}
+@keyframes fade-out{
+    to{
+        opacity: 0;
     }
 }
 .fade-down {
@@ -186,11 +191,11 @@ body, html{
     margin-top: 10px;
 }
 
-.about {
+.title {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #cecbcb;
+    background-color: transparent;
     width: 250px;
     height: 80px;
     color: rgb(0, 0, 0); 
@@ -205,13 +210,13 @@ body, html{
 .gradient{
     background: radial-gradient(circle at center, #fdfdfd 5%, #cecbcb 50%);
 }
-.education {
+.row {
     font-family: "Raleway";
     flex-direction: column;
     text-align: center;
 }
 
-.education-container {
+.row-container {
     display: flex;
     justify-content: center;
     align-items: flex-start; 
@@ -249,10 +254,32 @@ body, html{
    margin-top:auto;
 }
 
-.carousel {
-    display: flex;
+
+.projects{
+    font-family: "Raleway";
     justify-content: center;
     align-items: center;
-    width: 400px;
-   margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap:200px;
+}
+.project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hover-button {
+    opacity: 0;
+}
+
+.card:hover .hover-button {
+    animation: fade-in 0.5s ease-in forwards;
+}
+
+.modal-img{
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evan Ng</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/scripts.js"></script> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</head>
+<body class="gradient">
+    <div class="navbar2">
+            <a class="fade-in-text"href="index.html">Home</a>
+            <a class="fade-in-text"href="AboutMe.html">About Me</a>
+            <a class="fade-in-text"href="Skills.html">Skills</a>
+            <a class="fade-in-text"href="Contact.html"style="border-radius: 10px;width: 150px; background-color: white; color: black; display: flex; justify-content: center ;">
+                Contact
+            </a>
+    </div>
+    <div class="content-container">
+        <h1 class="title">
+            Experience
+        </h1>
+    </div>
+    <div class="projects" style="margin: 50px;">
+        <div class="card" style="width: 40rem;">
+            <img src="../assets/images/Titans.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Data Analyst Intern- Data Analyst for California State University, Fullerton's Division 1 Baseball Team</p>
+              <button class="btn hover-button" data-bs-toggle="modal" data-bs-target="#Data" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; border-color: black;">See More</button>
+            </div>
+        </div>
+    </div>
+    <div class="content-container">
+        <h1 class="title">
+            Projects
+        </h1>
+    </div>
+    <div class="projects" style="margin: 50px;">
+        <div class="card" style="width: 30rem; height:30rem;">
+            <img src="../assets/images/univ.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Univengage- Web app in development dedicated to connecting students at universities. Where students will be able to easily find clubs can seamlessly interact with eachother.</p>
+              <button class="btn hover-button" data-bs-toggle="modal" data-bs-target="#univengage" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; border-color: black;">See More</button>
+            </div>
+        </div>
+        <div class="card" style="width: 30rem; height:30rem;">
+            <img src="../assets/images/capy.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">CapyCleanGo!- Mobile app that encourages users to clean up trash!</p>
+              <p class="card-text">ACM FullyHacks 2025- Best Beginner Project</p>
+              <button class="btn hover-button" data-bs-toggle="modal" data-bs-target="#Discord" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; border-color: black;">See More</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<div class="modal fade" id="Data" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content modal-width">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Division 1 Baseball Data Analyst Intern</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <img class="modal-img" src="../assets/images/titans.png" style="width:500px;">
+            <hr>
+            <div class="modal-body">
+                <h5>Duration:</h5>
+                <p>August 2025 - January 2025</p>
+            </div>
+            <hr>
+            <div class="modal-body">
+                <h5>Description:</h5>
+                <p>Data Analyst For CSUF's D1 Baseball Team.</p>
+                <p>● Recorded real time pitching, batting and ball speeds from players using a Trackman doppler radar to further 
+                    analyze data, such as speed, velocity, spin rate, vertical / horizontal movement, release height, strike zone 
+                    location, etc.  </p>
+                <p>● Utilized csv files with R for advanced statistical analysis of player performance metrics, providing coaches and 
+                    management with important insights for player development and game strategy. </p>
+                <p>&nbsp-Created data visualizations in R to provide real-time insights into player performance trends and team 
+                    progress </p>
+                <p>&nbsp-Incorporated visualization plots into R shiny apps for ease and organized use of plots that can filter strike 
+                    zone plots for individual pitchers, dates, and pitch types. </p> 
+                <p>● Gathered pitching stats such as speed, velocity, spin rate, vertical / horizontal movement, release height, strike 
+                    zone location, etc.</p>
+                <p>● Developed a machine learning model using SciKit Learn in python to predict pitch types based on certain 
+                    parameters. </p>
+                <p>&nbsp-Gathered Trackman CSV data to feed the model inputs such as pitch velocity, vertical and horizontal break, 
+                    strike-zone location, and spin.</p>
+                <p>&nbsp-Trained the model with a wide range of different pitches and pitchers. Using a random forest algorithm to 
+                    train the model seemed to be the most efficient. </p>
+                <h5>Skills Used:</h5>
+                <p>Data Analysis, Machine Learning, R, Teamwork, Communication</p>
+            </div>
+            <div class="modal-body">
+                <h5>Related Media:</h5>
+                <div>
+                    <a href="https://github.com/EvanNg21/Pitching-Predictions" target="_blank">Pitching Prediction Model Github</a>
+                </div>
+                <img class="modal-img" src="../assets/images/Rplot.jpg" style="width:500px;">
+                <div>
+                    <a href="https://github.com/EvanNg21/Baseball" target="_blank">R Shiny Plot Github</a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="univengage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content modal-width">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Univengage</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <img class="modal-img" src="../assets/images/univ.png" style="width:500px;">
+            <hr>
+            <div class="modal-body">
+                univengage
+            </div>
+            <hr>
+            <div class="modal-body">
+                <h5>Duration:</h5>
+                <p>August 2024 - Present</p>
+            </div>
+            <hr>
+            <div class="modal-body">
+                <h5>Description:</h5>
+                <p>
+                    Currently in development, 
+                    Univengage is for students, joining campus clubs and organizations can provide 
+                    valuable opportunities for networking, skill development, and social engagement, 
+                    enhancing their overall university experience. 
+                    The platform will allow students to create personalized accounts, explore a 
+                    comprehensive database of clubs, RSVP to events, and receive tailored notifications. 
+                    Club organizers will benefit from tools that enable efficient event management, 
+                    communication with members, and analytics to track engagement. To ensure inclusivity, 
+                    the website will integrate accessibility features and cater to diverse student needs, 
+                    fostering a welcoming environment for all.
+                </p>
+                <p>
+                    ● Full-Stack Development of a SaaS like website using a React front-end and Ruby on Rails back-end, which 
+                    consists of using and managing GitHub, HTML, JavaScript, CSS, SQLite, and Ruby. 
+                </p>
+                <p>
+                    ● Worked on developing proposals and the product with a team in the CSUN Bull Ring competition to create a top 
+                    contender innovation. 
+                </p>
+                <p>
+                    ● Engineered custom API routes to facilitate data retrieval and transmission between the React front-end and Ruby 
+                    on Rails back-end. 
+                </p>
+                <p>
+                    ● The aim is to create a user-friendly platform to connect students with campus clubs and events, enhancing 
+                    engagement and community involvement. 
+                </p>
+                <p>
+                    ● Students are able to create accounts and edit profiles so they can join or create and manage clubs. Clubs are able 
+                    to create posts and events to attract students and interact with current members. 
+                </p>
+                <h5>Skills Used:</h5>
+                <p>React, Ruby on Rails, HTML, CSS, SQLite3, RESTful API</p>
+            </div>
+            <div class="modal-body">
+                <h5>Related Media:</h5>
+                <img src="../assets/images/un1.png" style="width:500px;">
+                <img src="../assets/images/un2.png" style="width:500px;">
+                <img src="../assets/images/un3.png" style="width:500px;">
+                <img src="../assets/images/un4.png" style="width:500px;">
+                <div>
+                    <a href="https://www.figma.com/design/fO8hMcunAQJkQuHLPc2S5T/MataSync-Redesign---ben?node-id=48-416&p=f&t=L5h4PFIyWlgfpOk4-0" target="_blank">Univengage Figma Plans</a>
+                </div>
+                <div>
+                    <a href="../assets/images/Proposal(edited).pdf" download="proposal.pdf">Univengage Proposal Document</a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="Discord" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content modal-width">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">CapyCleanGo!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <img class="modal-img" src="../assets/images/capy.png" style="width:500px;">
+            <hr>
+            <div class="modal-body">
+                <h5>Duration:</h5>
+                <p>April 2025</p>
+            </div>
+            <hr>
+            <div class="modal-body">
+                <h5>Description:</h5>
+                <p>FullyHacks 2025 Hackathon best be beginner project winners.</p>
+                <p>
+                    CapyCleanGo! is a mobile app game where users can take pictures of trash where ever they may be and receive "CapyCredit", an in-game currency. However, anyone can take pictures of trash littered about the floor and do nothing about it. Therefore, the users are rewarded on 3 criteria which much be met in the picture itself:
+                    The image must contain a identifiable trash object.
+                    The image must contain the user's hand.
+                    The image must contain an identifiable trash bin.
+                    This way, users are encouraged to actually throw away trash rather than just take a picture to cheat their way through the game.
+                </p>
+                <h5>Skills Used:</h5>
+                <p>React Native, TypeScript, Machine Learning</p>
+            </div>
+            <div class="modal-body">
+                <h5>Related Media:</h5>
+                <img src="../assets/images/cert.png">
+                <div>
+                    <a href="https://devpost.com/software/capycleango" target="_blank">CapyCleanGo! Devpost</a>
+                </div>
+                <div>
+                    <a href="https://github.com/Martindn-Ha/CapyCleanGo" target="_blank">CapyCleanGo! Github</a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
