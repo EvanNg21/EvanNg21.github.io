@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Evan Ng</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/scripts.js"></script>
 </head>
-<body>
-    
+<body class="gradient">
+    <div class="navbar2">
+            <a class="fade-in-text"href="index.html">Home</a>
+            <a class="fade-in-text"href="MyWork.html">MyWork</a>
+            <a class="fade-in-text"href="AboutMe.html">About Me</a>
+            <a class="fade-in-text"href="Contact.html"style="border-radius: 10px;width: 150px; background-color: white; color: black; display: flex; justify-content: center ;">
+                Contact
+            </a>
+    </div>
+    <div class="content-container">
+        <h1 class="title" style="font-weight: normal;">
+            Contact Me
+        </h1>
+    </div>
+    <form id="contact-form"class="contact-container" action="https://formspree.io/f/mdkgedeb" method="POST" target="_blank">
+        <label>
+        <input class="contact-form" type="text" name="name"  placeholder="Enter Your Name*" required>
+        </label>
+        <label>
+            <input class="contact-form" type="text" name="email"  placeholder="Enter Your Email*" required>
+        </label>
+        <label>
+            <input class="contact-form" type="text" name="phone"  placeholder="Phone Number">
+        </label>
+        <label>
+            <textarea class="contact-message" name="message"  placeholder="Your Message*" required></textarea>
+        </label>
+        <button type="submit" style="width: 200px; height: 40px; background-color: transparent; border-radius: 5px; font-size: 20px; font-family: Raleway;">
+            Submit
+        </button>
+    </form>
+    <div class="contact-container">
+        <div class="socials-contact">
+            <a href="https://github.com/EvanNg21" target="_blank">
+                <img src="../assets/images/github.png" alt="github" style="width:50px;">
+            </a>
+            <a href="https://www.linkedin.com/in/evan-ng-697973278/" target="_blank">
+                <img src="../assets/images/linkedin.png" alt="linkedin" style="width:50px;">
+            </a>
+            <div class="email-copy">
+                <img src="../assets/images/At-Symbol-icon.png" alt="email" style="width:50px;" onclick="copyEmailToClipboard()">
+                <span class="tooltip" style="font-family: Raleway;">
+                    evanwng21@gmail.com
+                    Click To Copy!
+                </span>
+            </div>
+        </div>
+        <p style="font-family: Raleway; font-size: 20px;">(818)-281-0605</p>
+    </div>
+
 </body>
 </html>

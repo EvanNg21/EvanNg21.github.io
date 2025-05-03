@@ -143,7 +143,16 @@ body, html{
     width: 100%;
     background-color: transparent;
     margin-right: 100px;
-}.socials img {
+}
+.socials-contact {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: transparent;
+    gap: 20px;
+    margin-top: 30px;
+}
+.socials img {
     margin: 10px;
 }
 .email-copy{
@@ -282,4 +291,36 @@ body, html{
     display: flex;
     justify-content: center;
     align-self: center;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form{
+    height:40px;
+    width: 400px;
+    background-color: #f3eaea;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: black;
+    font-family: "Raleway";
+    text-align: left;
+}
+
+.contact-message{
+    width: 400px;
+    height: 150px;
+    background-color: #f3eaea;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: black;
+    font-family: "Raleway";
+    text-align: left;
+    padding-top: 5px; /* Add padding to ensure text starts at the top */
+    box-sizing: border-box;
 }
